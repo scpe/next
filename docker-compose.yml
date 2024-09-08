@@ -1,0 +1,12 @@
+version: "3.0"
+services:
+  application:
+    image:
+      nextjs:12
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./:/home/node/
+    command:
+      "npm run dev"
+      
